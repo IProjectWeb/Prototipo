@@ -1,5 +1,5 @@
 /* ============================================
-   GABRIELA VERGARA — INTERACCIONES COMPLETAS
+   717 SOCIAL CREATIVE — INTERACCIONES COMPLETAS
    ============================================ */
 (function () {
     'use strict';
