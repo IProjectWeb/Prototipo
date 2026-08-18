@@ -1,0 +1,227 @@
+/* ============================================
+   SECCIONES NUEVAS
+   ============================================ */
+.about-new {
+    padding: 6rem 0;
+    background: var(--cream);
+}
+
+.about-new-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.about-new-header .section-tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.about-new-header h2 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+    line-height: 1.2;
+    color: var(--ink);
+}
+
+.about-new-header h2 em {
+    color: var(--primary);
+    font-style: italic;
+    font-weight: 500;
+}
+
+.about-new-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.about-new-card {
+    background: var(--white);
+    border-left: 4px solid var(--primary);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-new-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+}
+
+.about-new-card.featured-about {
+    background: var(--primary);
+    border-left-color: var(--secondary);
+}
+
+.about-new-card.featured-about h3,
+.about-new-card.featured-about p {
+    color: var(--cream);
+}
+
+.about-new-card.featured-about .about-number {
+    color: var(--secondary);
+}
+
+.about-number {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.about-new-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--ink);
+}
+
+.about-new-card p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.faqs-section {
+    padding: 6rem 0;
+    background: var(--white);
+}
+
+.faqs-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.faqs-header .section-tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.faqs-header h2 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--ink);
+}
+
+.faqs-header h2 em {
+    color: var(--primary);
+    font-style: italic;
+    font-weight: 500;
+}
+
+.faqs-header p {
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.faqs-grid {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq-item {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: var(--primary);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.faq-question h3 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 0;
+    flex: 1;
+}
+
+.faq-question i {
+    color: var(--primary);
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    padding: 0 1.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding: 0 1.5rem 1.2rem 1.5rem;
+}
+
+.faq-answer p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.integration-message {
+    padding: 4rem 0;
+    background: var(--cream-deep);
+    text-align: center;
+}
+
+.integration-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--white);
+    border-left: 4px solid var(--primary);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.integration-content:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.integration-content i {
+    display: inline-block;
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.integration-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--ink);
+    margin: 0;
+}

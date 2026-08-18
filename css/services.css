@@ -1,0 +1,229 @@
+/* ============================================
+   SERVICIOS
+   ============================================ */
+.services {
+    padding: 6rem 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+}
+
+.service-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.8rem 1.4rem;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+}
+
+.service-item i {
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 52px;
+    background: var(--cream-deep);
+    color: var(--primary);
+    border-radius: 0;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.service-item h3 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    margin-bottom: .5rem;
+}
+
+.service-item p {
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+.methods-light {
+    padding: 6rem 0;
+    background: var(--cream);
+    color: var(--ink);
+    width: 100%;
+    margin: 0;
+}
+
+.methods-light .methods-head h2 {
+    color: var(--ink);
+}
+
+.methods-light .methods-head p,
+.methods-light .method-card p {
+    color: var(--muted);
+}
+
+.methods-light .method-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+}
+
+.methods-light .method-card h3 {
+    color: var(--ink);
+}
+
+.methods-light .method-icon,
+.methods-light .method-cta {
+    color: var(--primary);
+}
+
+.methods-light .method-cta:hover {
+    color: var(--primary-dark);
+}
+
+.methods-light .method-card:hover {
+    background: var(--white);
+    border-color: var(--primary);
+}
+
+.services-cta-section {
+    padding: 6rem 0;
+    background: var(--cream);
+    text-align: center;
+}
+
+.services-cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services-cta-content .section-tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.services-cta-content h2 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: var(--ink);
+}
+
+.services-cta-content .btn-primary {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+.services-cta-content .btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-3px);
+}
+
+.services-enhanced {
+    padding: 4rem 0 6rem;
+    background: var(--cream);
+}
+
+.services-enhanced-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.service-card-enhanced {
+    position: relative;
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 2rem;
+    transition: all 0.4s ease;
+}
+
+.service-card-enhanced::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.service-card-enhanced:hover::before {
+    transform: scaleX(1);
+}
+
+.service-card-enhanced:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+    border-color: transparent;
+}
+
+.service-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: var(--cream-deep);
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.service-card-enhanced:hover .service-icon-wrapper {
+    background: var(--primary);
+}
+
+.service-icon-wrapper i {
+    font-size: 2rem;
+    color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.service-card-enhanced:hover .service-icon-wrapper i {
+    color: var(--white);
+}
+
+.service-card-enhanced h3 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--ink);
+}
+
+.service-card-enhanced p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.btn-service-enhanced {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--primary);
+    padding: 0.7rem 1.5rem;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-service-enhanced:hover {
+    background: var(--primary);
+    color: var(--white);
+    gap: 0.8rem;
+}
